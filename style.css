@@ -33,26 +33,21 @@ header p {
     margin: 5px 0 0;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-nav button {
+nav a {
     background-color: var(--red);
     color: var(--beige);
-    border: none;
+    text-decoration: none;
     padding: 10px 20px;
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
     transition: 0.3s;
+    display: inline-block;
+    border-radius: 5px;
 }
 
-nav button:hover {
+nav a:hover {
     background-color: var(--accent);
+
 }
 
 .logo {
