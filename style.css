@@ -272,3 +272,41 @@ footer {
     0%, 100% { transform: scale(1); opacity: 0.5; }
     50% { transform: scale(1.3); opacity: 0.8; }
 }
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* space between molecule and text */
+    padding: 10px 15px;
+    background-color: #9A0002; /* red */
+    color: #EFE6DE; /* beige */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.back-home:hover {
+    background-color: #FF5A5F; /* accent */
+}
+
+/* Small molecule circle to match the theme */
+.molecule-small {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF5A5F; /* accent color */
+    position: relative;
+}
+
+.molecule-small::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #9A0002; /* red */
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    opacity: 0.6;
+}
+
