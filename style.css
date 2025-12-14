@@ -274,27 +274,15 @@ footer {
 }
 
 .back-home {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px; /* space between molecule and text */
-    padding: 10px 15px;
-    background-color: #9A0002; /* red */
-    color: #EFE6DE; /* beige */
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Press Start 2P', cursive;
-}
-
-.back-home {
     display: inline-block;
-    padding: 5px 10px;
-    margin-bottom: 15px;
+    padding: 4px 8px;
+    margin-bottom: 12px;
     background-color: var(--red);
     color: var(--beige);
     text-decoration: none;
     border-radius: 4px;
-    font-family: 'Roboto', sans-serif; /* clean font */
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px; /* smaller font */
     transition: background-color 0.3s;
 }
 
