@@ -275,17 +275,19 @@ footer {
 
 .back-home {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 3px 6px;
     margin-bottom: 12px;
-    background-color: var(--red);
-    color: var(--beige);
+    background-color: var(--beige); /* light background */
+    color: var(--red);              /* text in red */
     text-decoration: none;
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px; /* smaller font */
-    transition: background-color 0.3s;
+    border-radius: 3px;
+    font-family: 'Roboto Slab', serif; /* complementary font */
+    font-size: 10px;                 /* smaller font size */
+    border: 1px solid var(--red);    /* subtle outline for visibility */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .back-home:hover {
-    background-color: var(--accent);
+    background-color: var(--red);
+    color: var(--beige);
 }
