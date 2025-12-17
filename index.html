@@ -9,13 +9,20 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+<div id="cart" class="cart" style="display:none;">
+    <h3>Your Cart</h3>
+    <p>No items yet</p>
+    <button onclick="toggleCart()">Close</button>
+</div>
+
 <body>
 
 <header>
     <h1>Catalist</h1>
     <p>Check the List. Start the Reaction</p>
 </header>
-
+<div class="cart-icon" onclick="toggleCart()">🛒</div>
 
     <div class="cart-container">
         <span id="cart-count">0</span>
