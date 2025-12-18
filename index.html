@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,69 +11,74 @@
 </head>
 <body>
 
-<header>
-    <h1>Catalist</h1>
-    <p>Check the List. Start the Reaction</p>
-<div class="cart-icon">
-    <div class="beaker">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-    <span class="cart-text">Cart</span>
-</div>
-
-<header>
-    <h1>Catalist</h1>
-    <p>Check the List. Start the Reaction</p>
-</header>
 <!-- Cart Icon -->
 <div class="cart-container" onclick="toggleCart()">
     <svg class="cart-icon" width="30" height="30" viewBox="0 0 24 24" fill="#9A0002" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 18C5.89543 18 5 18.8954 5 20C5 21.1046 5.89543 22 7 22C8.10457 22 9 21.1046 9 20C9 18.8954 8.10457 18 7 18ZM1 2V4H3L6.68 11.39L5.24 14.04C5.09 14.32 5 14.64 5 15C5 16.1046 5.89543 17 7 17H19V15H7.42C7.28 15 7.19 14.89 7.22 14.75L7.57 13.5H16.55C17.3 13.5 17.96 13.11 18.3 12.47L21.88 5.97C21.96 5.84 22 5.7 22 5.55C22 5.25 21.75 5 21.45 5H5.21L4.27 3H1ZM17 18C15.8954 18 15 18.8954 15 20C15 21.1046 15.8954 22 17 22C18.1046 22 19 21.1046 19 20C19 18.8954 18.1046 18 17 18Z"/>
+        <path d="M7 18C5.895 18 5 18.895 5 20C5 21.105 5.895 22 7 22C8.105 22 9 21.105 9 20C9 18.895 8.105 18 7 18ZM1 2V4H3L6.68 11.39L5.24 14.04C5.09 14.32 5 14.64 5 15C5 16.105 5.895 17 7 17H19V15H7.42C7.28 15 7.19 14.89 7.22 14.75L7.57 13.5H16.55C17.3 13.5 17.96 13.11 18.3 12.47L21.88 5.97C21.96 5.84 22 5.7 22 5.55C22 5.25 21.75 5 21.45 5H5.21L4.27 3H1ZM17 18C15.895 18 15 18.895 15 20C15 21.105 15.895 22 17 22C18.105 22 19 21.105 19 20C19 18.895 18.105 18 17 18Z"/>
     </svg>
     <span class="cart-count" id="cart-count"></span>
 </div>
 
 <!-- Cart Popup -->
 <div class="cart-popup" id="cart-popup">
-    <h3>Your Cart</h3>
+    <h3>The Reaction has started!</h3>
     <ul id="cart-items"></ul>
 </div>
-<div class="logo">LOGO AREA</div>
+
+<header>
+    <h1>Catalist</h1>
+    <p>Check the List. Start the Reaction</p>
+</header>
+
+<div class="logo">
+    LOGO AREA
+</div>
+
 <nav>
-  <a href="Shaq.html">Shaq</a>
-  <a href="Kim.html">Kim</a>
-  <a href="Gabby.html">Gabby</a>
-  <a href="Ria.html">Ria</a>
-  <a href="Shop.html">Shop</a>
+    <a href="Shaq.html">Shaq</a>
+    <a href="Kim.html">Kim</a>
+    <a href="Gabby.html">Gabby</a>
+    <a href="Ria.html">Ria</a>
+    <a href="Shop.html">Shop All</a>
 </nav>
 
-<!-- Reaction section removed -->
+<section class="reaction">
+    <div class="molecule"></div>
+    <div class="molecule"></div>
+    <div class="molecule"></div>
+</section>
 
 <section class="profiles" id="profiles-section">
     <div class="profile-card">
-        <img src="https://source.unsplash.com/100x100/?tshirt" alt="Shaq">
+        <img src="https://via.placeholder.com/100" alt="Shaq">
         <h3>Shaq</h3>
         <p>Discover Shaq's exclusive items</p>
+        <button onclick="addToCart('Shaq Hoodie')">Add to Cart</button>
+        <button onclick="addToCart('Shaq Tee')">Add to Cart</button>
     </div>
     <div class="profile-card">
-        <img src="https://source.unsplash.com/100x100/?jacket" alt="Kim">
+        <img src="https://via.placeholder.com/100" alt="Kim">
         <h3>Kim</h3>
         <p>Discover Kim's exclusive items</p>
+        <button onclick="addToCart('Kim Dress')">Add to Cart</button>
+        <button onclick="addToCart('Kim Top')">Add to Cart</button>
     </div>
     <div class="profile-card">
-        <img src="https://source.unsplash.com/100x100/?hoodie" alt="Gabby">
+        <img src="https://via.placeholder.com/100" alt="Gabby">
         <h3>Gabby</h3>
         <p>Discover Gabby's exclusive items</p>
+        <button onclick="addToCart('Gabby Skirt')">Add to Cart</button>
+        <button onclick="addToCart('Gabby Shirt')">Add to Cart</button>
     </div>
     <div class="profile-card">
-        <img src="https://source.unsplash.com/100x100/?sneakers" alt="Ria">
+        <img src="https://via.placeholder.com/100" alt="Ria">
         <h3>Ria</h3>
         <p>Discover Ria's exclusive items</p>
+        <button onclick="addToCart('Ria Jacket')">Add to Cart</button>
+        <button onclick="addToCart('Ria Pants')">Add to Cart</button>
     </div>
     <div class="profile-card">
-        <img src="https://source.unsplash.com/100x100/?clothing" alt="Shop All">
+        <img src="https://via.placeholder.com/100" alt="Shop All">
         <h3>Shop All</h3>
         <p>Browse all items</p>
     </div>
@@ -96,7 +101,6 @@
 <footer>
     &copy; 2025 Catalist. All rights reserved.
 </footer>
-
 
 <!-- Link to external JS -->
 <script src="script.js"></script>
