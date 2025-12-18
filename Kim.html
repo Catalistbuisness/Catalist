@@ -20,6 +20,21 @@
   <h1>Catalist</h1>
   <p>Check the List. Start the Reaction</p>
 </header>
+<!-- Cart Icon -->
+<div class="cart-container" onclick="toggleCart()">
+    <svg class="cart-icon" width="30" height="30" viewBox="0 0 24 24" fill="#9A0002" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 18C5.89543 18 5 18.8954 5 20C5 21.1046 5.89543 22 7 22C8.10457 22 9 21.1046 9 20C9 18.8954 8.10457 18 7 18ZM1 2V4H3L6.68 11.39L5.24 14.04C5.09 14.32 5 14.64 5 15C5 16.1046 5.89543 17 7 17H19V15H7.42C7.28 15 7.19 14.89 7.22 14.75L7.57 13.5H16.55C17.3 13.5 17.96 13.11 18.3 12.47L21.88 5.97C21.96 5.84 22 5.7 22 5.55C22 5.25 21.75 5 21.45 5H5.21L4.27 3H1ZM17 18C15.8954 18 15 18.8954 15 20C15 21.1046 15.8954 22 17 22C18.1046 22 19 21.1046 19 20C19 18.8954 18.1046 18 17 18Z"/>
+    </svg>
+    <span class="cart-count" id="cart-count"></span>
+</div>
+
+<!-- Cart Popup -->
+<div class="cart-popup" id="cart-popup">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+</div>
+<div class="logo">LOGO AREA</div>
+
 
 <nav>
   <a href="Shaq.html">Shaq</a>
